@@ -6,7 +6,7 @@ mv old2 old
 #keep a max of 10 backups
 sudo rm -r old/old/old/old/old/old/old/old/old/old/old/
 #download new site
-wget https://github.com/Kai-Barry/nutshell/archive/refs/heads/main.zip
+wget https://github.com/eco9898/nutshell/archive/refs/heads/main.zip
 unzip main.zip
 rm main.zip
 #install new site
