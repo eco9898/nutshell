@@ -80,7 +80,7 @@ file_put_contents("stats/dict.json", json_encode($files));
 <html  lang="en">
     <head>
         <meta name="description" content="
-            <?php echo $paragraphs[1]?>">
+            <?php echo $paragraphs[1];?>">
         <title><?php
                 echo $title;
                 echo $headerFile; ?>
