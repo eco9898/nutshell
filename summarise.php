@@ -42,10 +42,14 @@
                         <div class="translater-box"<?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
                             echo 'style="min-width:50%"';
                             }?>>
-                            <textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..."
-                                autocomplete="off" autocapitalize="off" crows="1" spellcheck="false" oninput="auto_grow(this)" onresize="auto_grow(this)"><?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
-                            echo $_POST['inputText'];
-                            }?></textarea>
+                            <textarea name="inputText"
+                                placeholder ="Enter any paragraph that you want summarised here..."
+                                autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"
+                                oninput="auto_grow(this)" onresize="auto_grow(this)">
+                                <?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
+                                    echo htmlspecialchars($_POST['inputText']);
+                                }?>
+                            </textarea>
                             <div class="spacer"></div>
                         </div>
                         <div class="translate-text-box">

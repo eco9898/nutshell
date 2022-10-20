@@ -36,6 +36,7 @@
             break;
         }
     }
+    unset($im);
 
     $file = file_get_contents($popular, FILE_USE_INCLUDE_PATH);
     $popular = substr($popular, 6, strlen($popular)-strlen("pages/.data"));

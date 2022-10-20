@@ -499,7 +499,6 @@ img {
     border: none;
     outline: none;
     width: calc(100% - 20px);
-    resize: vertical;
     min-height: 125px;
     resize: none;
     overflow: hidden;

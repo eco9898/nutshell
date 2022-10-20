@@ -52,7 +52,6 @@ def createImages(topic, subheadings):
         page = requests.get(searchURL, headers=headers)
         soup = BeautifulSoup(page.content, "html.parser")
         images = soup.find_all('img', class_='mimg')
-        i = 0
         added = False
         for image in images:
             if not image.has_key('src'):
