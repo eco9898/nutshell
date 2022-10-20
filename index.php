@@ -53,31 +53,34 @@
 <!DOCTYPE html>
 <html  lang="en">
     <head>
-    <meta name="google-site-verification" content="QTQpuTXPDRKhbp3taY6chLsDu5tFqz7XhMIsaknx5o4" />
-    <script>
-        function auto_grow(element) {
-            //element.value = element.value.replace(/[\r\n]/gm, '');
-            if (element.value.includes("\n") || element.value.includes("\r")) {
-                element.value = element.value.replace(/[\r\n]/gm, '');
-                if (element.value.length > 0) {
-//                     const para = document.createElement("p");
-//                     const node = document.createTextNode("Loading...");
-//                     para.appendChild(node);
-//                     para.setAttribute('style', 'padding-top:50px; text-align: center')
-//                     const insertElement = document.getElementById("one");
-//                     insertElement.appendChild(para);
-                    document.getElementById("loading").style.visibility = "visible";
-                    
-                    window.location.href = "/genPage.php?page=" + element.value;
+        <meta name="description" content="
+            In a Nutshell is a website that is powered by openAI's
+            GPT 3 to create articles for children.
+            Search for a topic on the home page,
+            or find an article from the list of already generated articles.
+            The website will generate an article for anything that it deems
+            appropriate for children and a valid article topic.
+            Each article consists of 5 sections,
+            each with a picture scrapped from the internet.
+            There is also an option to 'translate' text into a more easy to read version.">
+        <meta name="google-site-verification" content="QTQpuTXPDRKhbp3taY6chLsDu5tFqz7XhMIsaknx5o4" />
+        <script>
+            function auto_grow(element) {
+                //element.value = element.value.replace(/[\r\n]/gm, '');
+                if (element.value.includes("\n") || element.value.includes("\r")) {
+                    element.value = element.value.replace(/[\r\n]/gm, '');
+                    if (element.value.length > 0) {
+                        document.getElementById("loading").style.visibility = "visible";
+                        
+                        window.location.href = "/genPage.php?page=" + element.value;
+                    }
                 }
+                element.style.height = "5px";
+                element.style.height = (element.scrollHeight)+"px";
             }
-            element.style.height = "5px";
-            element.style.height = (element.scrollHeight)+"px";
-        }
-    </script>
-    <title>Search<?php
-        echo $headerFile; ?>
-<!-- Set up template html code here-->
+        </script>
+        <title>Search<?php
+            echo $headerFile; ?>
         <div class="one" id ="one">
             <h1 class="title">Let your curiosity drive you!</h1>
             <div class="search">

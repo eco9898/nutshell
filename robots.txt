@@ -1,9 +1,8 @@
 User-agent: *
-Disallow: /js*
 Disallow: /other*
 Disallow: /stats*
 Disallow: /testing*
 Disallow: *.ttf
 Disallow: OhNoPage.php
 Disallow: random.php
-Disallow: genPage.php*
+Disallow: genPage.php

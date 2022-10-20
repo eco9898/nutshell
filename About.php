@@ -5,8 +5,16 @@
 <!DOCTYPE html>
 <html  lang="en">
     <head>
-    <title>Ethics<?php
-        echo $headerFile; ?>
+        <meta name="description" content="
+            The In a Nutshell Team (🦖➕☄️=☠️) is a group of university students that are passionate
+            about making online experiences simpler and accessible to everyone.
+            Combining our unique perspectives and passions,
+            we are a diverse team that seeks to create unique
+            and engaging experiences through our different skill sets.
+            We’re just students who want to make the process of being a student easier for the next generation;
+            we hope we’ve succeeded.">
+        <title>Ethics<?php
+            echo $headerFile; ?>
         <h1 class="title">About Us</h1>
         <div class="AboutBox">
             <div class="AboutMessage">

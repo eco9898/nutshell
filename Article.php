@@ -79,7 +79,14 @@ file_put_contents("stats/dict.json", json_encode($files));
 <!DOCTYPE html>
 <html  lang="en">
     <head>
-    <!--insert header code here-->
+        <meta name="description" content="
+            The In a Nutshell Team (🦖➕☄️=☠️) is a group of university students that are passionate
+            about making online experiences simpler and accessible to everyone.
+            Combining our unique perspectives and passions,
+            we are a diverse team that seeks to create unique
+            and engaging experiences through our different skill sets.
+            We’re just students who want to make the process of being a student easier for the next generation;
+            we hope we’ve succeeded.">
         <title><?php
                 echo $title;
                 echo $headerFile; ?>

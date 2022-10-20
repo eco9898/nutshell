@@ -14,7 +14,12 @@ if (isset($_GET["display"])) {
 <!DOCTYPE html>
 <html  lang="en">
     <head>
-    <!--insert header code here-->
+        <meta name="description" content="
+            In a Nutshell is a website that is powered by openAI's
+            GPT 3 to create articles for children.
+            Here you can find an article from the list of already generated articles.
+            Each article consists of 5 sections,
+            each with a picture scrapped from the internet.">
             <title>List<?php
                 echo $headerFile; ?>
             <div class="wantMore"
@@ -142,7 +147,6 @@ if (isset($_GET["display"])) {
                 <div class="spacer"></div>
             </div>
         </div>
-        <!--insert body code here-->
         <?php echo $footerFile;?>
     </body>
 </html>
