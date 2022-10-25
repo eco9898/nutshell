@@ -90,7 +90,7 @@ open crontab set up with
 Then add the following line to the bottom:
 `50 23 * * * cd /var/www/html && php stats/compareDictionary.php`
 or
-`su -l www-data -s /bin/bash -c "cd /var/www/html/ && php -f stats/compareDictionary.php"`
+`50 23 * * * su -l www-data -s /bin/bash -c "cd /var/www/html/ && php -f stats/compareDictionary.php"`
 
 Each day, just before midnight, this will log the sites that were accessed that day and the ones newly created that day.
 
