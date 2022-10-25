@@ -23,3 +23,4 @@ location ~ testing* {
 
 sudo crontab -e
 50 23 * * * cd /var/www/html && php stats/compareDictionary.php
+50 23 * * * su -l www-data -s /bin/bash -c "cd /var/www/html/ && php -f stats/compareDictionary.php"
