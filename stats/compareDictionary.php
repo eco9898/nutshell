@@ -1,12 +1,12 @@
 <?php
         //Find newest save not from today
-        $latest_ctime = 0;
+        $latest_mtime = 0;
         $recent = '';
         $files = glob('stats/currVisits*.json');
         foreach ($files as $file) {
-                if (is_file($file) && filectime($file) > $latest_ctime
+                if (is_file($file) && filemtime($file) > $latest_mtime
                         && $file != "stats/currVisits-" . date("Y-m-d") . ".json") {
-                        $latest_ctime = filectime($file);
+                        $latest_mtime = filemtime($file);
                         $recent = $file;
                 }
         }
